@@ -1,0 +1,12 @@
+{
+  "name": "@forge-it/design",
+  "version": "0.1.0",
+  "description": "Validated product design drafts for Forge It specifications",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "forge-design": "./dist/cli.js" },
+  "files": ["dist", "README.md"],
+  "scripts": { "build": "tsc -p tsconfig.json", "typecheck": "tsc --noEmit -p tsconfig.json", "test": "vitest run --passWithNoTests" },
+  "dependencies": { "commander": "^14.0.2" },
+  "devDependencies": { "@types/node": "^24.10.0", "typescript": "^5.9.3", "vitest": "^4.0.8" }
+}

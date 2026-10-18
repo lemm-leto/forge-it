@@ -1,0 +1,12 @@
+{
+  "name": "@forge-it/quality",
+  "version": "0.1.0",
+  "description": "Declarative quality gates for Forge It drafts",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "forge-quality": "./dist/cli.js" },
+  "files": ["dist", "README.md"],
+  "scripts": { "build": "tsc -p tsconfig.json", "typecheck": "tsc --noEmit -p tsconfig.json", "test": "vitest run --passWithNoTests" },
+  "dependencies": { "commander": "^14.0.2", "yaml": "^2.8.2" },
+  "devDependencies": { "@types/node": "^24.10.0", "typescript": "^5.9.3", "vitest": "^4.0.8" }
+}

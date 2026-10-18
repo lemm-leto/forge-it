@@ -1,0 +1,12 @@
+{
+  "name": "@forge-it/pipeline",
+  "version": "0.1.0",
+  "description": "Git branch lifecycle utilities for Forge It delivery pipelines",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "forge-pipeline": "./dist/cli.js" },
+  "files": ["dist", "README.md"],
+  "scripts": { "build": "tsc -p tsconfig.json", "typecheck": "tsc --noEmit -p tsconfig.json", "test": "vitest run --passWithNoTests" },
+  "dependencies": { "commander": "^14.0.2" },
+  "devDependencies": { "@types/node": "^24.10.0", "typescript": "^5.9.3", "vitest": "^4.0.8" }
+}

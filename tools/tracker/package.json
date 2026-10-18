@@ -1,0 +1,29 @@
+{
+  "name": "@forge-it/tracker",
+  "version": "0.1.0",
+  "description": "JSON-first Vikunja tracker CLI for agents",
+  "license": "MIT",
+  "type": "module",
+  "bin": {
+    "forge-tracker": "./dist/cli.js"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "dev": "tsx src/cli.ts",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit -p tsconfig.json"
+  },
+  "dependencies": {
+    "commander": "^14.0.2"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.0",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "vitest": "^4.0.8"
+  }
+}
